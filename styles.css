@@ -87,5 +87,5 @@ body{background:var(--soft-page);color:var(--soft-text)}
 .sheet-options .grammar-option.selected{background:var(--soft-accent-fill);color:#004f9e}
 @media(max-width:600px){.learning-controls{background:rgba(246,246,242,.96)}}
 
-.grammar-picker{min-height:48px;font-size:18px}
-@media(max-width:600px){.grammar-picker{min-height:48px;font-size:18px}}
+.grammar-picker{min-height:56px;font-size:22px}
+@media(max-width:600px){.grammar-picker{min-height:56px;font-size:22px}}
