@@ -16,10 +16,14 @@
         <div><h2 id="study-title">文法を選ぶ</h2></div>
       </div>
 
+      <div class="learning-controls">
+        <div class="level-switch" role="group" aria-label="学習レベル"><button type="button" class="level-button active" data-level="middle" aria-pressed="true">中学</button><button type="button" class="level-button" data-level="high" aria-pressed="false">高校</button></div>
+        <button class="grammar-picker" id="grammar-picker" type="button" aria-haspopup="dialog" aria-controls="grammar-sheet"><span id="grammar-picker-label">be動詞</span><span aria-hidden="true">⌄</span></button>
+      </div>
+
       <div class="study-layout">
         <aside class="grammar-panel" aria-label="文法を選ぶ">
           <div class="panel-heading"><span>文法一覧</span><span class="panel-count" id="grammar-count"></span></div>
-          <div class="level-switch" role="group" aria-label="学習レベル"><button type="button" class="level-button active" data-level="middle" aria-pressed="true">中学</button><button type="button" class="level-button" data-level="high" aria-pressed="false">高校</button></div>
           <div class="grammar-options" id="grammar-options"></div>
         </aside>
         <div class="examples-panel">
@@ -32,5 +36,10 @@
     </section>
 
   </main>
+  <dialog class="grammar-sheet" id="grammar-sheet" aria-labelledby="grammar-sheet-title">
+    <div class="sheet-header"><h2 id="grammar-sheet-title">文法を選ぶ</h2><button type="button" class="sheet-close" aria-label="閉じる" id="grammar-sheet-close">×</button></div>
+    <label class="sheet-search"><span aria-hidden="true">⌕</span><input id="grammar-search" type="search" placeholder="文法名を検索" aria-label="文法名を検索"></label>
+    <div class="sheet-options" id="grammar-sheet-options"></div>
+  </dialog>
 </body>
 </html>
