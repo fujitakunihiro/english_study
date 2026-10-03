@@ -56,3 +56,13 @@ body{background:#fff;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,
 .grammar-panel .grammar-name{font-size:16px}.grammar-panel .grammar-option{min-height:50px}
 .grammar-group-label{font-size:13px;font-weight:600}
 .sheet-options .grammar-name{font-size:19px;font-weight:600}.sheet-options .grammar-group-label{font-size:14px;font-weight:600}.sheet-options .grammar-option{min-height:56px;padding-block:12px}
+
+/* English-first reading hierarchy */
+.example-english{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Yu Gothic UI',Meiryo,sans-serif;font-size:26px;font-weight:650;line-height:1.5;letter-spacing:-.025em;color:#1d1d1f}
+.example-japanese{font-size:16px;line-height:1.8;color:#6e6e73}
+.grammar-description{margin:10px 0 2px;padding:8px 0;background:transparent;color:#6e6e73;font-size:13px;line-height:1.75}
+.learning-controls .level-button{min-height:44px;font-size:14px}
+.grammar-picker{min-height:44px;font-size:15px}
+.audio-button{width:44px;height:44px}
+@media(max-width:800px){.example-english{font-size:24px}}
+@media(max-width:600px){.example-card{grid-template-columns:minmax(0,1fr) 44px;gap:9px}.example-english{font-size:24px}.example-japanese{font-size:16px}.grammar-description{font-size:13px}.learning-controls .level-button{font-size:14px}.grammar-picker{min-height:44px;font-size:14px}.audio-button{width:44px;height:44px}}
