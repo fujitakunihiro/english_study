@@ -66,3 +66,23 @@ body{background:#fff;color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,
 .audio-button{width:44px;height:44px}
 @media(max-width:800px){.example-english{font-size:24px}}
 @media(max-width:600px){.example-card{grid-template-columns:minmax(0,1fr) 44px;gap:9px}.example-english{font-size:24px}.example-japanese{font-size:16px}.grammar-description{font-size:13px}.learning-controls .level-button{font-size:14px}.grammar-picker{min-height:44px;font-size:14px}.audio-button{width:44px;height:44px}}
+
+/* Soft neutral surfaces with consistently legible text and controls */
+:root{--soft-page:#f6f6f2;--soft-surface:#fff;--soft-border:#deded8;--soft-text:#1d1d1f;--soft-secondary:#59595e;--soft-accent:#0066cc;--soft-accent-fill:#e8f1fc}
+body{background:var(--soft-page);color:var(--soft-text)}
+.study-section,.footer{background:var(--soft-page)}
+.learning-controls{background:rgba(246,246,242,.96)}
+.grammar-panel,.examples-panel{background:var(--soft-surface);border-color:var(--soft-border)}
+.level-switch{background:#ecece7}
+.level-button{color:var(--soft-secondary)}
+.grammar-picker{border-color:#c8c8c3;color:var(--soft-text)}
+.grammar-option.selected{background:var(--soft-accent-fill);color:#004f9e}
+.grammar-option.selected:before{background:var(--soft-accent)}
+.grammar-option.selected .grammar-number{color:var(--soft-accent)}
+.example-japanese,.grammar-description,.panel-heading,.panel-count,.list-footer{color:var(--soft-secondary)}
+.audio-button{background:var(--soft-accent-fill);color:#0059b3}
+.grammar-sheet{background:var(--soft-surface);color:var(--soft-text)}
+.sheet-search{background:#efefeb;color:var(--soft-secondary)}
+.sheet-close{background:#efefeb;color:var(--soft-secondary)}
+.sheet-options .grammar-option.selected{background:var(--soft-accent-fill);color:#004f9e}
+@media(max-width:600px){.learning-controls{background:rgba(246,246,242,.96)}}
