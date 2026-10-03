@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="文法ごとの英文と日本語訳を、音声を聞きながら楽しく学べる英語学習サイト。">
+  <title>英文法の例文練習</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="top">
+    <section class="study-section" id="study" aria-labelledby="study-title">
+      <div class="section-heading">
+        <div><h2 id="study-title">文法を選ぶ</h2></div>
+      </div>
+
+      <div class="study-layout">
+        <aside class="grammar-panel" aria-label="文法を選ぶ">
+          <div class="panel-heading"><span>文法一覧</span><span class="panel-count" id="grammar-count"></span></div>
+          <div class="level-switch" role="group" aria-label="学習レベル"><button type="button" class="level-button active" data-level="middle" aria-pressed="true">中学</button><button type="button" class="level-button" data-level="high" aria-pressed="false">高校</button></div>
+          <div class="grammar-options" id="grammar-options"></div>
+        </aside>
+        <div class="examples-panel">
+          <div class="examples-toolbar"><div class="selected-grammar"><h3 id="selected-title"></h3></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="例文を検索" aria-label="例文を検索"></label></div>
+          <div class="grammar-description" id="grammar-description"></div>
+          <div class="example-list" id="example-list" aria-live="polite"></div>
+          <div class="list-footer"><span id="result-count"></span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
